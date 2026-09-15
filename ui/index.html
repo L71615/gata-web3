@@ -1,0 +1,14 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>GATE · Solana Radar</title><link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+  <header class="topbar"><div class="brand"><b>G</b><div><strong>GATE</strong><small>Solana Radar</small></div></div><div class="topright"><span class="badge">PAPER MODE</span><span><i id="dot"></i><span id="connection">连接中</span></span></div></header>
+  <main class="shell">
+    <section class="hero"><div><p class="eyebrow">MARKET INTELLIGENCE / SOLANA</p><h1>新币雷达</h1><p class="muted">候选币、风险评分、纸上仓位和审计事件。</p></div><div class="updated">最后更新 <strong id="updated">--</strong><button id="refresh">刷新</button></div></section>
+    <section class="metrics"><article><span>已发现候选</span><strong id="candidates">--</strong><small>数据库累计</small></article><article><span>风险评估</span><strong id="assessments">--</strong><small>评分记录</small></article><article><span>纸上仓位</span><strong id="openPaper">--</strong><small>当前 OPEN</small></article><article><span>已实现 PnL</span><strong id="pnl">$0.00</strong><small>纸上交易</small></article></section>
+    <section class="layout"><section class="panel wide"><div class="panel-head"><div><p class="eyebrow">LIVE FEED</p><h2>候选币</h2></div><span id="feedCount">0 条</span></div><div id="error" class="error" hidden></div><div class="table-scroll"><table><thead><tr><th>币种</th><th>评分</th><th>流动性</th><th>5m 买 / 卖</th><th>24h 成交量</th><th>结论</th><th>风险原因</th></tr></thead><tbody id="rows"><tr><td colspan="7" class="empty">等待扫描数据…</td></tr></tbody></table></div></section><aside><section class="panel"><div class="panel-head"><div><p class="eyebrow">PAPER BOOK</p><h2>纸上仓位</h2></div></div><div id="positions" class="list"><div class="empty">暂无纸上仓位</div></div></section><section class="panel"><div class="panel-head"><div><p class="eyebrow">AUDIT TRAIL</p><h2>最近事件</h2></div></div><div id="audit" class="list"><div class="empty">暂无审计事件</div></div></section></aside></section>
+  </main><footer>GATE v1 · 默认只读 / 纸上交易 · 实盘签名未启用</footer><script type="module" src="/app.js"></script>
+</body></html>
